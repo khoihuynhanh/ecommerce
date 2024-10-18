@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true
+
+api:
+  prefix: api/v1
+
+jwt:
+  secretKey: 0tRpkCDuF/C1fJ7RSSvI8KsulOjxdR18BgKwy8J7aKY=
+
